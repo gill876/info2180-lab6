@@ -3,14 +3,25 @@
     <head>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="app.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Avengers Spot</title>
     </head>
     <body>
         <div>
             <h1>Avengers Character Search</h1>
         </div>
-        <div class="searchButton">
-            <button>Search</button>
+        <div class="form-field">
+            <div>
+                <label for="search_name">Search by Fullname of Alias</label>
+                <input id="search_name" type="text" name="search_name"/>
+            </div>
+            <div class="searchButton">
+                <button>Search</button>
+            </div>
         </div>
+        <h4>RESULT</h4>
+        <hr>
+        <div id="result"></div>
     </body>
 </html>
