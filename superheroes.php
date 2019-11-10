@@ -71,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
     foreach($superheroes as $item){
       if(($item['name'] === $sanitized_query) || ($item['alias'] === $sanitized_query)){?>
         <h3><?= $item['alias'];?></h3>
-        <h4><?= $item['name'];?></h4>
+        <h4>A.K.A. <?= $item['name'];?></h4>
         <p><?= $item['biography'];?></p>
       <?php
       } else {
