@@ -14,6 +14,15 @@ $(document).ready(function(){
         }).fail(function(){
             alert('There was an issue with the request.');
         });
+        /*$.get("superheroes.php",
+        {
+            query: searchName
+        }).done(function(response){
+            let resp = response;
+            $('#result').html(resp);
+        }).fail(function(){
+            alert('There was an issue with the request.');
+        });*/
     });
 });
 

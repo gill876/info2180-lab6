@@ -65,7 +65,7 @@ $superheroes = [
 
 if($_SERVER['REQUEST_METHOD'] === 'GET'){
   if(!empty($_GET['query'])){
-    $sanitized_query = filter_var($_GET['query'], FILTER_SANITIZE_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW);
+    $sanitized_query = filter_var($_GET['query'], FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_NO_ENCODE_QUOTES);
     echo "<script>console.log(\" $sanitized_query \");</script>";
     $not_found = 0;
     foreach($superheroes as $item){
